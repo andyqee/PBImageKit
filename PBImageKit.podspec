@@ -9,7 +9,6 @@ Pod::Spec.new do |spec|
   spec.source_files = 'PBImageKit/**/*'
   spec.requires_arc = true
   spec.social_media_url = 'https://twitter.com/vitasone'
-  spec.library = 'objective-c'
   spec.xcconfig = {
        'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
        'CLANG_CXX_LIBRARY' => 'libc++'
