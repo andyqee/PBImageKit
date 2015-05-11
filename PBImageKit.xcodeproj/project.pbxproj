@@ -27,7 +27,6 @@
 		A14BC0C31AFFAB5000DDBC4F /* PBFetchImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BC0AD1AFFAB5000DDBC4F /* PBFetchImageRequest.m */; };
 		A14BC0C41AFFAB5000DDBC4F /* PBFetchImageTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A14BC0AE1AFFAB5000DDBC4F /* PBFetchImageTask.h */; };
 		A14BC0C51AFFAB5000DDBC4F /* PBFetchImageTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BC0AF1AFFAB5000DDBC4F /* PBFetchImageTask.m */; };
-		A14BC0C61AFFAB5000DDBC4F /* PhotoBook_Util.h in Headers */ = {isa = PBXBuildFile; fileRef = A14BC0B01AFFAB5000DDBC4F /* PhotoBook_Util.h */; };
 		A14BC0C71AFFAB5000DDBC4F /* UIImage+fix_rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = A14BC0B11AFFAB5000DDBC4F /* UIImage+fix_rotation.h */; };
 		A14BC0C81AFFAB5000DDBC4F /* UIImage+fix_rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BC0B21AFFAB5000DDBC4F /* UIImage+fix_rotation.m */; };
 		A14BC0C91AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A14BC0B31AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.h */; };
@@ -70,7 +69,6 @@
 		A14BC0AD1AFFAB5000DDBC4F /* PBFetchImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFetchImageRequest.m; sourceTree = "<group>"; };
 		A14BC0AE1AFFAB5000DDBC4F /* PBFetchImageTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFetchImageTask.h; sourceTree = "<group>"; };
 		A14BC0AF1AFFAB5000DDBC4F /* PBFetchImageTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFetchImageTask.m; sourceTree = "<group>"; };
-		A14BC0B01AFFAB5000DDBC4F /* PhotoBook_Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBook_Util.h; sourceTree = "<group>"; };
 		A14BC0B11AFFAB5000DDBC4F /* UIImage+fix_rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fix_rotation.h"; sourceTree = "<group>"; };
 		A14BC0B21AFFAB5000DDBC4F /* UIImage+fix_rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fix_rotation.m"; sourceTree = "<group>"; };
 		A14BC0B31AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PBImageFetcher.h"; sourceTree = "<group>"; };
@@ -121,11 +119,8 @@
 			children = (
 				A14BC0CB1AFFABA800DDBC4F /* PBImageManager.h */,
 				A14BC0CC1AFFABA800DDBC4F /* PBImageManager.m */,
-				A14BC09F1AFFAB5000DDBC4F /* ALAssetsLibrary+sharedInstance.h */,
-				A14BC0A01AFFAB5000DDBC4F /* ALAssetsLibrary+sharedInstance.m */,
 				A14BC0A11AFFAB5000DDBC4F /* PBAssetLibraryUtil.h */,
 				A14BC0A21AFFAB5000DDBC4F /* PBAssetLibraryUtil.m */,
-				A14BC0A31AFFAB5000DDBC4F /* PBAssetsDefine.h */,
 				A14BC0A41AFFAB5000DDBC4F /* PBAssetsGroupRequest.h */,
 				A14BC0A51AFFAB5000DDBC4F /* PBAssetsGroupRequest.m */,
 				A14BC0A61AFFAB5000DDBC4F /* PBAssetsRequest.h */,
@@ -138,12 +133,9 @@
 				A14BC0AD1AFFAB5000DDBC4F /* PBFetchImageRequest.m */,
 				A14BC0AE1AFFAB5000DDBC4F /* PBFetchImageTask.h */,
 				A14BC0AF1AFFAB5000DDBC4F /* PBFetchImageTask.m */,
-				A14BC0B01AFFAB5000DDBC4F /* PhotoBook_Util.h */,
-				A14BC0B11AFFAB5000DDBC4F /* UIImage+fix_rotation.h */,
-				A14BC0B21AFFAB5000DDBC4F /* UIImage+fix_rotation.m */,
-				A14BC0B31AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.h */,
-				A14BC0B41AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.m */,
+				A14BC1311B00552300DDBC4F /* Category */,
 				A14BC0881AFFAA4A00DDBC4F /* PBImageKit.h */,
+				A14BC0A31AFFAB5000DDBC4F /* PBAssetsDefine.h */,
 				A14BC0861AFFAA4A00DDBC4F /* Supporting Files */,
 			);
 			path = PBImageKit;
@@ -174,6 +166,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A14BC1311B00552300DDBC4F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A14BC09F1AFFAB5000DDBC4F /* ALAssetsLibrary+sharedInstance.h */,
+				A14BC0A01AFFAB5000DDBC4F /* ALAssetsLibrary+sharedInstance.m */,
+				A14BC0B11AFFAB5000DDBC4F /* UIImage+fix_rotation.h */,
+				A14BC0B21AFFAB5000DDBC4F /* UIImage+fix_rotation.m */,
+				A14BC0B31AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.h */,
+				A14BC0B41AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -183,7 +188,6 @@
 			files = (
 				A14BC0BA1AFFAB5000DDBC4F /* PBAssetsGroupRequest.h in Headers */,
 				A14BC0C91AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.h in Headers */,
-				A14BC0C61AFFAB5000DDBC4F /* PhotoBook_Util.h in Headers */,
 				A14BC0BC1AFFAB5000DDBC4F /* PBAssetsRequest.h in Headers */,
 				A14BC0CD1AFFABA800DDBC4F /* PBImageManager.h in Headers */,
 				A14BC0B51AFFAB5000DDBC4F /* ALAssetsLibrary+sharedInstance.h in Headers */,
