@@ -106,11 +106,11 @@ static dispatch_group_t image_fetch_operation_completion_group()
         for (ALAsset *asset in _assets) {
             NSURL *url = [asset valueForProperty:ALAssetPropertyAssetURL];
             NSString *key = [url absoluteString];
-            UIImage *image = [[PBImageCache sharedInstance] valueForKey:key];
+            UIImage *image = [[PBImageCache sharedInstance] imageForKey:key];
             
             if (image == nil) {
                 image = [self _createUIImageBasedOnResolution:asset];
-                [[PBImageCache sharedInstance] setValue:image forKey:key];
+                [[PBImageCache sharedInstance] setImage:image forKey:key];
             }
             [_images addObject:image];
         }
