@@ -12,6 +12,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <UIKit/UIKit.h>
 #import "PBFetchImageRequest.h"
+#import "PBImageCache.h"
 
 typedef NS_ENUM(NSInteger, PBFetchImageTaskState){
     
@@ -103,7 +104,14 @@ static dispatch_group_t image_fetch_operation_completion_group()
     self.state = kPBFetchImageTaskStateExecuting;
     if (!self.isCancelled) {
         for (ALAsset *asset in _assets) {
-            [_images addObject:[self _createUIImageBasedOnResolution:asset]];
+            NSString *key = [asset valueForKey:ALAssetPropertyAssetURL];
+            UIImage *image = [[PBImageCache sharedInstance] valueForKey:key];
+            
+            if (image == nil) {
+                image = [self _createUIImageBasedOnResolution:asset];
+                [[PBImageCache sharedInstance] setValue:image forKey:key];
+            }
+            [_images addObject:image];
         }
     }
     self.state = kPBFetchImageTaskStateFinished;

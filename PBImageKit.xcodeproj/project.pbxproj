@@ -33,6 +33,8 @@
 		A14BC0CA1AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BC0B41AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.m */; };
 		A14BC0CD1AFFABA800DDBC4F /* PBImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A14BC0CB1AFFABA800DDBC4F /* PBImageManager.h */; };
 		A14BC0CE1AFFABA800DDBC4F /* PBImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BC0CC1AFFABA800DDBC4F /* PBImageManager.m */; };
+		A1FA077C1B1AB9BF00140213 /* PBImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FA077A1B1AB9BF00140213 /* PBImageCache.h */; };
+		A1FA077D1B1AB9BF00140213 /* PBImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FA077B1B1AB9BF00140213 /* PBImageCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		A14BC0B41AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PBImageFetcher.m"; sourceTree = "<group>"; };
 		A14BC0CB1AFFABA800DDBC4F /* PBImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBImageManager.h; sourceTree = "<group>"; };
 		A14BC0CC1AFFABA800DDBC4F /* PBImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBImageManager.m; sourceTree = "<group>"; };
+		A1FA077A1B1AB9BF00140213 /* PBImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBImageCache.h; sourceTree = "<group>"; };
+		A1FA077B1B1AB9BF00140213 /* PBImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBImageCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				A14BC0AD1AFFAB5000DDBC4F /* PBFetchImageRequest.m */,
 				A14BC0AE1AFFAB5000DDBC4F /* PBFetchImageTask.h */,
 				A14BC0AF1AFFAB5000DDBC4F /* PBFetchImageTask.m */,
+				A1FA077A1B1AB9BF00140213 /* PBImageCache.h */,
+				A1FA077B1B1AB9BF00140213 /* PBImageCache.m */,
 				A14BC1311B00552300DDBC4F /* Category */,
 				A14BC0881AFFAA4A00DDBC4F /* PBImageKit.h */,
 				A14BC0A31AFFAB5000DDBC4F /* PBAssetsDefine.h */,
@@ -195,6 +201,7 @@
 				A14BC0BE1AFFAB5000DDBC4F /* PBFetchAssetsGroupTask.h in Headers */,
 				A14BC0C21AFFAB5000DDBC4F /* PBFetchImageRequest.h in Headers */,
 				A14BC0C41AFFAB5000DDBC4F /* PBFetchImageTask.h in Headers */,
+				A1FA077C1B1AB9BF00140213 /* PBImageCache.h in Headers */,
 				A14BC0B71AFFAB5000DDBC4F /* PBAssetLibraryUtil.h in Headers */,
 				A14BC0B91AFFAB5000DDBC4F /* PBAssetsDefine.h in Headers */,
 				A14BC0C71AFFAB5000DDBC4F /* UIImage+fix_rotation.h in Headers */,
@@ -308,6 +315,7 @@
 				A14BC0CA1AFFAB5000DDBC4F /* UIImageView+PBImageFetcher.m in Sources */,
 				A14BC0B61AFFAB5000DDBC4F /* ALAssetsLibrary+sharedInstance.m in Sources */,
 				A14BC0C51AFFAB5000DDBC4F /* PBFetchImageTask.m in Sources */,
+				A1FA077D1B1AB9BF00140213 /* PBImageCache.m in Sources */,
 				A14BC0C81AFFAB5000DDBC4F /* UIImage+fix_rotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +506,7 @@
 				A14BC09B1AFFAA4A00DDBC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14BC09C1AFFAA4A00DDBC4F /* Build configuration list for PBXNativeTarget "PBImageKitTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +515,7 @@
 				A14BC09E1AFFAA4A00DDBC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
