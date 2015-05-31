@@ -104,7 +104,8 @@ static dispatch_group_t image_fetch_operation_completion_group()
     self.state = kPBFetchImageTaskStateExecuting;
     if (!self.isCancelled) {
         for (ALAsset *asset in _assets) {
-            NSString *key = [asset valueForKey:ALAssetPropertyAssetURL];
+            NSURL *url = [asset valueForProperty:ALAssetPropertyAssetURL];
+            NSString *key = [url absoluteString];
             UIImage *image = [[PBImageCache sharedInstance] valueForKey:key];
             
             if (image == nil) {
